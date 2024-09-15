@@ -20,4 +20,23 @@ ERROR: launchpadlib 1.10.13 requires testresources, which is not installed.
 
 Solution:
 pip install testresources
+tips: use pip with the correct version
+```
+
+### urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='files.pythonhosted.org', port=443): Read timed out.
+```
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='files.pythonhosted.org', port=443): Read timed out.
+
+Solution:
+~$ python3 -m pip install --upgrade pip -i https://pypi.tuna.tsinghua.edu.cn/simple/
+```
+
+### error: subprocess-exited-with-error
+```
+  error: subprocess-exited-with-error
+
+  × python setup.py egg_info did not run successfully.
+
+Solution:
+pip install --upgrade pip setuptools==57.5.0 -i https://pypi.tuna.tsinghua.edu.cn/simple/
 ```
